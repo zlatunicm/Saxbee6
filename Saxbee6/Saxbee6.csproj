@@ -1,0 +1,969 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\jscript\ng\**" />
+    <Content Remove="wwwroot\jscript\ng\**" />
+    <EmbeddedResource Remove="wwwroot\jscript\ng\**" />
+    <None Remove="wwwroot\jscript\ng\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot/jscript\ngpcelinjak\New Text Document.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\jscript\ngpcelinjak\apppcelinjak.js" />
+    <Content Include="wwwroot\jscript\ngpcelinjak\izvjescaController.js" />
+    <Content Include="wwwroot\jscript\ngpcelinjak\pcelinjakController.js" />
+    <Content Include="wwwroot\jscript\ngpcelinjak\pcelinjakDetailsController.js" />
+    <Content Include="wwwroot\jscript\ngpcelinjak\zajedniceController.js" />
+    <Content Include="wwwroot\jscript\ngpcelinjak\zajedniceDetailsController.js" />
+    <Content Include="wwwroot\lib\angular-route\.bower.json" />
+    <Content Include="wwwroot\lib\angular-route\angular-route.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\angular-route\angular-route.min.js" />
+    <Content Include="wwwroot\lib\angular-route\angular-route.min.js.map">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\angular-route\bower.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\angular-route\index.js" />
+    <Content Include="wwwroot\lib\angular-route\LICENSE.md">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\angular-route\package.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\angular-route\README.md" />
+    <Content Include="wwwroot\lib\angular-ui-grid\homeView.html" />
+    <Content Include="wwwroot\lib\angular\.bower.json" />
+    <Content Include="wwwroot\lib\angular\angular-csp.css" />
+    <Content Include="wwwroot\lib\angular\angular.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\angular\angular.min.js" />
+    <Content Include="wwwroot\lib\angular\angular.min.js.gzip" />
+    <Content Include="wwwroot\lib\angular\angular.min.js.map" />
+    <Content Include="wwwroot\lib\angular\bower.json" />
+    <Content Include="wwwroot\lib\angular\index.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\angular\LICENSE.md">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\angular\package.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\angular\README.md" />
+    <Content Include="wwwroot\lib\bootstrap\.bower.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\bower.json" />
+    <Content Include="wwwroot\lib\bootstrap\CHANGELOG.md" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="wwwroot\lib\bootstrap\dist\js\npm.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\fonts\glyphicons-halflings-regular.eot">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\fonts\glyphicons-halflings-regular.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\fonts\glyphicons-halflings-regular.ttf">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\fonts\glyphicons-halflings-regular.woff">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\fonts\glyphicons-halflings-regular.woff2">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\Gemfile" />
+    <Content Include="wwwroot\lib\bootstrap\Gemfile.lock" />
+    <Content Include="wwwroot\lib\bootstrap\Gruntfile.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\grunt\.jshintrc" />
+    <Content Include="wwwroot\lib\bootstrap\grunt\bs-commonjs-generator.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\grunt\bs-glyphicons-data-generator.js" />
+    <Content Include="wwwroot\lib\bootstrap\grunt\bs-lessdoc-parser.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\grunt\bs-raw-files-generator.js" />
+    <Content Include="wwwroot\lib\bootstrap\grunt\change-version.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\grunt\configBridge.json" />
+    <Content Include="wwwroot\lib\bootstrap\grunt\npm-shrinkwrap.json" />
+    <Content Include="wwwroot\lib\bootstrap\grunt\sauce_browsers.yml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\ISSUE_TEMPLATE.md">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\js\.jscsrc" />
+    <Content Include="wwwroot\lib\bootstrap\js\.jshintrc">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\js\affix.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\js\alert.js" />
+    <Content Include="wwwroot\lib\bootstrap\js\button.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\js\carousel.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\js\collapse.js" />
+    <Content Include="wwwroot\lib\bootstrap\js\dropdown.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\js\modal.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\js\popover.js" />
+    <Content Include="wwwroot\lib\bootstrap\js\scrollspy.js" />
+    <Content Include="wwwroot\lib\bootstrap\js\tab.js" />
+    <Content Include="wwwroot\lib\bootstrap\js\tooltip.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\js\transition.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\.csscomb.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\.csslintrc">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\alerts.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\badges.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\bootstrap.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\breadcrumbs.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\button-groups.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\buttons.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\carousel.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\close.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\code.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\component-animations.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\dropdowns.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\forms.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\glyphicons.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\grid.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\input-groups.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\jumbotron.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\labels.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\list-group.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\media.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\mixins.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\alerts.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\background-variant.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\border-radius.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\buttons.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\center-block.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\clearfix.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\forms.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\gradients.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\grid-framework.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\grid.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\hide-text.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\image.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\labels.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\list-group.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\nav-divider.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\nav-vertical-align.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\opacity.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\pagination.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\panels.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\progress-bar.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\reset-filter.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\reset-text.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\resize.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\responsive-visibility.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\size.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\tab-focus.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\table-row.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\text-emphasis.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\text-overflow.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\vendor-prefixes.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\modals.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\navbar.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\navs.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\normalize.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\pager.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\pagination.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\panels.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\popovers.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\print.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\progress-bars.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\responsive-embed.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\responsive-utilities.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\scaffolding.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\tables.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\theme.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\thumbnails.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\tooltip.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\type.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\utilities.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\variables.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\less\wells.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\LICENSE" />
+    <Content Include="wwwroot\lib\bootstrap\nuget\bootstrap.less.nuspec">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\nuget\bootstrap.nuspec">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootstrap\nuget\MyGet.ps1" />
+    <Content Include="wwwroot\lib\bootstrap\package.js" />
+    <Content Include="wwwroot\lib\bootstrap\package.json" />
+    <Content Include="wwwroot\lib\bootstrap\README.md">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\.bower.json" />
+    <Content Include="wwwroot\lib\bootswatch\.bowerrc">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\.npmignore">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\bower.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\cerulean\bootstrap.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\cerulean\bootstrap.min.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\cerulean\bootswatch.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\cerulean\thumbnail.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\cerulean\variables.less" />
+    <Content Include="wwwroot\lib\bootswatch\cerulean\_bootswatch.scss" />
+    <Content Include="wwwroot\lib\bootswatch\cerulean\_variables.scss" />
+    <Content Include="wwwroot\lib\bootswatch\cosmo\bootstrap.css" />
+    <Content Include="wwwroot\lib\bootswatch\cosmo\bootstrap.min.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\cosmo\bootswatch.less" />
+    <Content Include="wwwroot\lib\bootswatch\cosmo\thumbnail.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\cosmo\variables.less" />
+    <Content Include="wwwroot\lib\bootswatch\cosmo\_bootswatch.scss" />
+    <Content Include="wwwroot\lib\bootswatch\cosmo\_variables.scss" />
+    <Content Include="wwwroot\lib\bootswatch\cyborg\bootstrap.css" />
+    <Content Include="wwwroot\lib\bootswatch\cyborg\bootstrap.min.css" />
+    <Content Include="wwwroot\lib\bootswatch\cyborg\bootswatch.less" />
+    <Content Include="wwwroot\lib\bootswatch\cyborg\thumbnail.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\cyborg\variables.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\cyborg\_bootswatch.scss" />
+    <Content Include="wwwroot\lib\bootswatch\cyborg\_variables.scss" />
+    <Content Include="wwwroot\lib\bootswatch\darkly\bootstrap.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\darkly\bootstrap.min.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\darkly\bootswatch.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\darkly\thumbnail.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\darkly\variables.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\darkly\_bootswatch.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\darkly\_variables.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\flatly\bootstrap.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\flatly\bootstrap.min.css" />
+    <Content Include="wwwroot\lib\bootswatch\flatly\bootswatch.less" />
+    <Content Include="wwwroot\lib\bootswatch\flatly\thumbnail.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\flatly\variables.less" />
+    <Content Include="wwwroot\lib\bootswatch\flatly\_bootswatch.scss" />
+    <Content Include="wwwroot\lib\bootswatch\flatly\_variables.scss" />
+    <Content Include="wwwroot\lib\bootswatch\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="wwwroot\lib\bootswatch\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="wwwroot\lib\bootswatch\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="wwwroot\lib\bootswatch\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="wwwroot\lib\bootswatch\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="wwwroot\lib\bootswatch\journal\bootstrap.css" />
+    <Content Include="wwwroot\lib\bootswatch\journal\bootstrap.min.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\journal\bootswatch.less" />
+    <Content Include="wwwroot\lib\bootswatch\journal\thumbnail.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\journal\variables.less" />
+    <Content Include="wwwroot\lib\bootswatch\journal\_bootswatch.scss" />
+    <Content Include="wwwroot\lib\bootswatch\journal\_variables.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\LICENSE" />
+    <Content Include="wwwroot\lib\bootswatch\lumen\bootstrap.css" />
+    <Content Include="wwwroot\lib\bootswatch\lumen\bootstrap.min.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\lumen\bootswatch.less" />
+    <Content Include="wwwroot\lib\bootswatch\lumen\thumbnail.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\lumen\variables.less" />
+    <Content Include="wwwroot\lib\bootswatch\lumen\_bootswatch.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\lumen\_variables.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\paper\bootstrap.css" />
+    <Content Include="wwwroot\lib\bootswatch\paper\bootstrap.min.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\paper\bootswatch.less" />
+    <Content Include="wwwroot\lib\bootswatch\paper\thumbnail.png" />
+    <Content Include="wwwroot\lib\bootswatch\paper\variables.less" />
+    <Content Include="wwwroot\lib\bootswatch\paper\_bootswatch.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\paper\_variables.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\readable\bootstrap.css" />
+    <Content Include="wwwroot\lib\bootswatch\readable\bootstrap.min.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\readable\bootswatch.less" />
+    <Content Include="wwwroot\lib\bootswatch\readable\thumbnail.png" />
+    <Content Include="wwwroot\lib\bootswatch\readable\variables.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\readable\_bootswatch.scss" />
+    <Content Include="wwwroot\lib\bootswatch\readable\_variables.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\README.md" />
+    <Content Include="wwwroot\lib\bootswatch\sandstone\bootstrap.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\sandstone\bootstrap.min.css" />
+    <Content Include="wwwroot\lib\bootswatch\sandstone\bootswatch.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\sandstone\thumbnail.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\sandstone\variables.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\sandstone\_bootswatch.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\sandstone\_variables.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\simplex\bootstrap.css" />
+    <Content Include="wwwroot\lib\bootswatch\simplex\bootstrap.min.css" />
+    <Content Include="wwwroot\lib\bootswatch\simplex\bootswatch.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\simplex\thumbnail.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\simplex\variables.less" />
+    <Content Include="wwwroot\lib\bootswatch\simplex\_bootswatch.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\simplex\_variables.scss" />
+    <Content Include="wwwroot\lib\bootswatch\slate\bootstrap.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\slate\bootstrap.min.css" />
+    <Content Include="wwwroot\lib\bootswatch\slate\bootswatch.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\slate\thumbnail.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\slate\variables.less" />
+    <Content Include="wwwroot\lib\bootswatch\slate\_bootswatch.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\slate\_variables.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\spacelab\bootstrap.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\spacelab\bootstrap.min.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\spacelab\bootswatch.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\spacelab\thumbnail.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\spacelab\variables.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\spacelab\_bootswatch.scss" />
+    <Content Include="wwwroot\lib\bootswatch\spacelab\_variables.scss" />
+    <Content Include="wwwroot\lib\bootswatch\superhero\bootstrap.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\superhero\bootstrap.min.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\superhero\bootswatch.less" />
+    <Content Include="wwwroot\lib\bootswatch\superhero\thumbnail.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\superhero\variables.less" />
+    <Content Include="wwwroot\lib\bootswatch\superhero\_bootswatch.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\superhero\_variables.scss" />
+    <Content Include="wwwroot\lib\bootswatch\united\bootstrap.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\united\bootstrap.min.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\united\bootswatch.less" />
+    <Content Include="wwwroot\lib\bootswatch\united\thumbnail.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\united\variables.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\united\_bootswatch.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\united\_variables.scss" />
+    <Content Include="wwwroot\lib\bootswatch\yeti\bootstrap.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\bootswatch\yeti\bootstrap.min.css" />
+    <Content Include="wwwroot\lib\bootswatch\yeti\bootswatch.less" />
+    <Content Include="wwwroot\lib\bootswatch\yeti\thumbnail.png" />
+    <Content Include="wwwroot\lib\bootswatch\yeti\variables.less" />
+    <Content Include="wwwroot\lib\bootswatch\yeti\_bootswatch.scss" />
+    <Content Include="wwwroot\lib\bootswatch\yeti\_variables.scss" />
+    <Content Include="wwwroot\lib\font-awesome\.bower.json" />
+    <Content Include="wwwroot\lib\font-awesome\.gitignore" />
+    <Content Include="wwwroot\lib\font-awesome\.npmignore" />
+    <Content Include="wwwroot\lib\font-awesome\bower.json" />
+    <Content Include="wwwroot\lib\font-awesome\css\font-awesome.css" />
+    <Content Include="wwwroot\lib\font-awesome\css\font-awesome.css.map" />
+    <Content Include="wwwroot\lib\font-awesome\css\font-awesome.min.css" />
+    <Content Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="wwwroot\lib\font-awesome\fonts\FontAwesome.otf">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="wwwroot\lib\font-awesome\less\animated.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\font-awesome\less\bordered-pulled.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\font-awesome\less\core.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\font-awesome\less\fixed-width.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\font-awesome\less\font-awesome.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\font-awesome\less\icons.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\font-awesome\less\larger.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\font-awesome\less\list.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\mixins.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\path.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\rotated-flipped.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\font-awesome\less\screen-reader.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\font-awesome\less\stacked.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\variables.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\font-awesome\scss\font-awesome.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\font-awesome\scss\_animated.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_bordered-pulled.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\font-awesome\scss\_core.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_icons.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_larger.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\font-awesome\scss\_list.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_mixins.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\font-awesome\scss\_path.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_rotated-flipped.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\font-awesome\scss\_screen-reader.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\font-awesome\scss\_stacked.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\font-awesome\scss\_variables.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery-validation-unobtrusive\.bower.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery-validation-unobtrusive\bower.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <Content Include="wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" />
+    <Content Include="wwwroot\lib\jquery-validation\.bower.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <Content Include="wwwroot\lib\jquery-validation\dist\additional-methods.min.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery-validation\dist\jquery.validate.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Include="wwwroot\lib\jquery-validation\LICENSE.md">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\.bower.json" />
+    <Content Include="wwwroot\lib\jquery\AUTHORS.txt" />
+    <Content Include="wwwroot\lib\jquery\bower.json" />
+    <Content Include="wwwroot\lib\jquery\dist\jquery.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <Content Include="wwwroot\lib\jquery\dist\jquery.min.map">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\external\sizzle\dist\sizzle.js" />
+    <Content Include="wwwroot\lib\jquery\external\sizzle\dist\sizzle.min.js" />
+    <Content Include="wwwroot\lib\jquery\external\sizzle\dist\sizzle.min.map">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\external\sizzle\LICENSE.txt">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\LICENSE.txt">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\README.md">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\.jshintrc">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\ajax.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\ajax\jsonp.js" />
+    <Content Include="wwwroot\lib\jquery\src\ajax\load.js" />
+    <Content Include="wwwroot\lib\jquery\src\ajax\parseJSON.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\ajax\parseXML.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\ajax\script.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\ajax\var\location.js" />
+    <Content Include="wwwroot\lib\jquery\src\ajax\var\nonce.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\ajax\var\rquery.js" />
+    <Content Include="wwwroot\lib\jquery\src\ajax\xhr.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\attributes.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\attributes\attr.js" />
+    <Content Include="wwwroot\lib\jquery\src\attributes\classes.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\attributes\prop.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\attributes\support.js" />
+    <Content Include="wwwroot\lib\jquery\src\attributes\val.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\callbacks.js" />
+    <Content Include="wwwroot\lib\jquery\src\core.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\core\access.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\core\init.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\core\parseHTML.js" />
+    <Content Include="wwwroot\lib\jquery\src\core\ready.js" />
+    <Content Include="wwwroot\lib\jquery\src\core\var\rsingleTag.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\css.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\addGetHookIf.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\css\adjustCSS.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\curCSS.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\defaultDisplay.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\hiddenVisibleSelectors.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\showHide.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\support.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\var\cssExpand.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\var\getStyles.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\css\var\isHidden.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\var\rmargin.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\var\rnumnonpx.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\css\var\swap.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\data.js" />
+    <Content Include="wwwroot\lib\jquery\src\data\Data.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\data\var\acceptData.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\data\var\dataPriv.js" />
+    <Content Include="wwwroot\lib\jquery\src\data\var\dataUser.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\deferred.js" />
+    <Content Include="wwwroot\lib\jquery\src\deprecated.js" />
+    <Content Include="wwwroot\lib\jquery\src\dimensions.js" />
+    <Content Include="wwwroot\lib\jquery\src\effects.js" />
+    <Content Include="wwwroot\lib\jquery\src\effects\animatedSelector.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\effects\Tween.js" />
+    <Content Include="wwwroot\lib\jquery\src\event.js" />
+    <Content Include="wwwroot\lib\jquery\src\event\ajax.js" />
+    <Content Include="wwwroot\lib\jquery\src\event\alias.js" />
+    <Content Include="wwwroot\lib\jquery\src\event\focusin.js" />
+    <Content Include="wwwroot\lib\jquery\src\event\support.js" />
+    <Content Include="wwwroot\lib\jquery\src\event\trigger.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\exports\amd.js" />
+    <Content Include="wwwroot\lib\jquery\src\exports\global.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\intro.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\jquery.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\manipulation.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\manipulation\buildFragment.js" />
+    <Content Include="wwwroot\lib\jquery\src\manipulation\getAll.js" />
+    <Content Include="wwwroot\lib\jquery\src\manipulation\setGlobalEval.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\manipulation\support.js" />
+    <Content Include="wwwroot\lib\jquery\src\manipulation\var\rcheckableType.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\manipulation\var\rscriptType.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\manipulation\var\rtagName.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\manipulation\wrapMap.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\manipulation\_evalUrl.js" />
+    <Content Include="wwwroot\lib\jquery\src\offset.js" />
+    <Content Include="wwwroot\lib\jquery\src\outro.js" />
+    <Content Include="wwwroot\lib\jquery\src\queue.js" />
+    <Content Include="wwwroot\lib\jquery\src\queue\delay.js" />
+    <Content Include="wwwroot\lib\jquery\src\selector-native.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\selector-sizzle.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\selector.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\serialize.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\traversing.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\traversing\findFilter.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\traversing\var\dir.js" />
+    <Content Include="wwwroot\lib\jquery\src\traversing\var\rneedsContext.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\traversing\var\siblings.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\var\arr.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\var\class2type.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\concat.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\document.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\var\documentElement.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\var\hasOwn.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\var\indexOf.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\pnum.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\push.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\rcssNum.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\var\rnotwhite.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\slice.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\var\support.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\var\toString.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\jquery\src\wrap.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\underscore\.bower.json" />
+    <Content Include="wwwroot\lib\underscore\bower.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\underscore\LICENSE">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\underscore\README.md" />
+    <Content Include="wwwroot\lib\underscore\underscore-min.js" />
+    <Content Include="wwwroot\lib\underscore\underscore-min.map">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\lib\underscore\underscore.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\templates\homeView.html" />
+    <Content Include="wwwroot\templates\izvjescaView.html" />
+    <Content Include="wwwroot\templates\pcelinjakDetails\pcelinjakDetailsView.html" />
+    <Content Include="wwwroot\templates\pcelinjakView.html" />
+    <Content Include="wwwroot\templates\zajedniceDetails\zajedniceDetailsView.html" />
+    <Content Include="wwwroot\templates\zajedniceView.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.0.2" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="1.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,132 @@
+﻿<div  class="col-md-6 col-md-offset-2">
+
+    <div class="panel panel-default">
+
+        <div class="panel-heading">Prikaz Pcelinjaka</div>
+
+        <table st-table="pcelinjaci"  class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Opis</th>
+                    <th>Oznaka</th>
+                </tr>
+                <tr>
+                    <th colspan="5"><input st-search="" class="form-control" placeholder="Global search..." type="text"/></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="pcelinjak in ctrlPcelinjak.pcelinjaci">
+                    <td>{{pcelinjak.opis}}</td>
+                    <td>{{pcelinjak.oznakaPcelinjaka}}</td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" ng-click="removeItem(row)" class="btn btn-md btn-danger">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </button>
+
+                            <a ui-sref="pcelinjakDetails({id:pcelinjak.idPcelinjak})" ng-click="" class="btn btn-md btn-warning">
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                            </a>
+
+                            <a ui-sref="zajednice({id:pcelinjak.idPcelinjak})" ng-click="" class="btn btn-md btn-info">
+                                <i class="fa fa-forumbee" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </td>
+                  </tr>
+                
+            </tbody>
+            <tfoot>
+                
+            </tfoot>
+        </table>
+    </div>
+
+</div>
+
+<div class="col-md-3">
+
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#noviPcelinjak">
+        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+    </button>
+    <!-- Modal noviPcelinjak-->
+    <div id="noviPcelinjak" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"><strong>Novi Pcelinjak</strong></h4>
+                </div>
+                <div class="modal-body">
+
+                    <form novalidate name="newPcelinjakForm" ng-submit="ctrlPcelinjak.addPcelinjak()">
+                        <div class="form-group">
+                            <label for="oznaka">Oznaka</label>
+                            <input class="form-control" type="text" id="oznaka" name="oznaka" ng-model="ctrlPcelinjak.newPcelinjak.oznakaPcelinjaka" />
+                            <label for="naziv">Naziv</label>
+                            <input class="form-control" type="text" id="naziv" name="naziv" ng-model="ctrlPcelinjak.newPcelinjak.naziv" />
+                            <label for="opis">Opis</label>
+                            <textarea class="form-control" id="opis" name="opis" rows="5" ng-model="ctrlPcelinjak.newPcelinjak.opis"></textarea>
+
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Add" class="btn btn-success btn-sm" data-dismiss="modal"/>
+                        </div>
+                    </form>
+                    
+
+
+
+                </div>
+                <!--<div class="modal-footer">
+
+
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>-->
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--<!-- Modal editPcelinjak-->
+<div id="editPcelinjak" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Prilagodba pcelinjaka</h4>
+            </div>
+            <div class="modal-body">
+
+                <form novalidate name="newPcelinjakForm" ng-submit="ctrlPcelinjak.addPcelinjak()">
+                    <div class="form-group">
+                        <label for="naziv">Naziv</label>
+                        <input class="form-control" type="text" id="naziv" name="naziv" ng-model="ctrlPcelinjak.newPcelinjak.naziv"  value="{{pcelinjak.naziv}}"/>
+                        <label for="opis">Opis</label>
+                        <input class="form-control" type="text" id="opis" name="opis" ng-model="ctrlPcelinjak.newPcelinjak.opis" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Add" class="btn btn-success btn-sm" />
+                    </div>
+                </form>
+
+
+
+
+            </div>
+            <div class="modal-footer">
+
+
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>-->
+

@@ -1,0 +1,85 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <base href="/"/>
+
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/lib/bootswatch/spacelab/bootstrap.css" rel="stylesheet" />
+
+  
+
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/angular/angular.js"></script>
+    <script src="~/lib/angular-route/angular-route.js"></script>
+    <script src="~/lib/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script src="~/lib/angular-smart-table/dist/smart-table.js"></script>
+
+    <script src="~/jscript/ngpcelinjak/apppcelinjak.js"></script>
+    <script src="~/jscript/ngpcelinjak/homeController.js"></script>
+    <script src="~/jscript/ngpcelinjak/pcelinjakController.js"></script>
+    <script src="~/jscript/ngpcelinjak/zajedniceController.js"></script>
+    <script src="~/jscript/ngpcelinjak/izvjescaController.js"></script>
+   
+
+    <script src="~/jscript/ngpcelinjak/zajedniceDetailsController.js"></script>
+    <script src="~/jscript/ngpcelinjak/pcelinjakDetailsController.js"></script>
+
+</head>
+
+<body ng-app="apppcelinjak">
+
+    <div class="row">
+        <div id="sidebar">
+            <ul class="nav">
+
+               <li><a ui-sref="home">home</a></li> 
+               <li><a ui-sref="pcelinjak">Pcelinjak</a></li> 
+               <li><a ui-sref="izvjesca">Izvjesca</a></li> 
+
+            </ul>
+        </div>
+
+        <div id="wrapper">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+
+
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <button id="sidebarToggle" class="btn btn-primary">
+                                <i class="fa fa-angle-left"></i>
+                            </button>
+                        </li>
+                    </ul>
+ 
+                    <ul class="nav navbar-nav navbar-right">
+               
+                    </ul>
+                </div>
+
+            </nav>
+            <div id="main" class="container-fluid">
+
+                <ui-view></ui-view>
+
+            </div>
+            <div id="footer" class="container-fluid">
+                <div class="navbar navbar-inverse navbar-fixed-bottom">
+                    <h4 class="text-center text-danger">&copy; 2017 Aplikacija za evidenciju Pcelarstva</h4>
+                </div>
+            </div>
+        </div>  
+   </div>
+
+
+</body>
+</html>

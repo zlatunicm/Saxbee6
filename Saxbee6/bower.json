@@ -1,0 +1,23 @@
+{
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "underscore": "~1.8.3",
+    "bootstrap": "~3.3.7",
+    "jquery": "~2.2.0",
+    "jquery-validation": "~1.14.0",
+    "jquery-validation-unobtrusive": "~3.2.6",
+    "bootswatch": "~3.3.7",
+    "font-awesome": "~4.7.0",
+    "angular": "~1.6.4",
+    "angular-route": "~1.6.4",
+    "angular-ui-router": "1.0.3",
+    "angular-ui-grid": "~4.0.4",
+    "angular-smart-table": "~2.1.8"
+    
+
+  },
+  "resolutions": {
+    "angular": ">= 1.2.0"
+  }
+}

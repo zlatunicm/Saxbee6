@@ -1,0 +1,16 @@
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\wwwroot\lib\angular-datatables\demo\dist\out-tsc-e2e\app.po.js
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\wwwroot\lib\angular-datatables\demo\dist\out-tsc-e2e\app.po.js.map
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\wwwroot\lib\angular-datatables\demo\dist\out-tsc-e2e\app.e2e-spec.js
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\wwwroot\lib\angular-datatables\demo\dist\out-tsc-e2e\app.e2e-spec.js.map
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\wwwroot\lib\angular-datatables\demo\dist\out-tsc-e2e\app.po.js
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\wwwroot\lib\angular-datatables\demo\dist\out-tsc-e2e\app.po.js.map
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\wwwroot\lib\angular-datatables\demo\dist\out-tsc-e2e\app.e2e-spec.js
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\wwwroot\lib\angular-datatables\demo\dist\out-tsc-e2e\app.e2e-spec.js.map
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\wwwroot\lib\angular-datatables\demo\dist\out-tsc-e2e\app.po.js
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\wwwroot\lib\angular-datatables\demo\dist\out-tsc-e2e\app.po.js.map
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\wwwroot\lib\angular-datatables\demo\dist\out-tsc-e2e\app.e2e-spec.js
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\wwwroot\lib\angular-datatables\demo\dist\out-tsc-e2e\app.e2e-spec.js.map
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\wwwroot\lib\angular-datatables\demo\dist\out-tsc-e2e\app.po.js
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\wwwroot\lib\angular-datatables\demo\dist\out-tsc-e2e\app.po.js.map
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\wwwroot\lib\angular-datatables\demo\dist\out-tsc-e2e\app.e2e-spec.js
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\wwwroot\lib\angular-datatables\demo\dist\out-tsc-e2e\app.e2e-spec.js.map

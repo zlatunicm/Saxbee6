@@ -1,0 +1,22 @@
+﻿<div class="col-md-6">
+
+        <form novalidate name="updatePcelinjakForm" ng-submit="ctrlDetaljiPcelinjaka.updatePcelinjak()">
+            <div class="form-group">
+                <label for="oznaka">Oznaka</label>
+                <input class="form-control" type="text" id="oznaka" name="oznaka" ng-model="ctrlDetaljiPcelinjaka.updatedPcelinjak.oznakaPcelinjaka" value="true"/>
+                <label for="naziv">Naziv</label>
+                <input class="form-control" type="text" id="naziv" name="naziv" ng-model="ctrlDetaljiPcelinjaka.updatedPcelinjak.naziv" value="true"/>
+                <label for="opis">Opis</label>
+                <textarea class="form-control" id="opis" name="opis" rows="5" ng-model="ctrlDetaljiPcelinjaka.updatedPcelinjak.opis" value="true"></textarea>
+
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add" class="btn btn-success btn-sm" data-dismiss="modal" />
+            </div>
+        </form>
+
+
+
+
+    </div>
+</div>

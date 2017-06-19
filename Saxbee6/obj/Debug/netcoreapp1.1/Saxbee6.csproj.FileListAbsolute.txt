@@ -1,0 +1,18 @@
+C:\Users\Matej\Desktop\Praksa\NovoBrale\Backup\New folder (2)\SaxBee6\Saxbee6\Saxbee6\bin\Debug\netcoreapp1.1\Saxbee6.deps.json
+C:\Users\Matej\Desktop\Praksa\NovoBrale\Backup\New folder (2)\SaxBee6\Saxbee6\Saxbee6\bin\Debug\netcoreapp1.1\Saxbee6.runtimeconfig.json
+C:\Users\Matej\Desktop\Praksa\NovoBrale\Backup\New folder (2)\SaxBee6\Saxbee6\Saxbee6\bin\Debug\netcoreapp1.1\Saxbee6.runtimeconfig.dev.json
+C:\Users\Matej\Desktop\Praksa\NovoBrale\Backup\New folder (2)\SaxBee6\Saxbee6\Saxbee6\bin\Debug\netcoreapp1.1\Saxbee6.dll
+C:\Users\Matej\Desktop\Praksa\NovoBrale\Backup\New folder (2)\SaxBee6\Saxbee6\Saxbee6\bin\Debug\netcoreapp1.1\Saxbee6.pdb
+C:\Users\Matej\Desktop\Praksa\NovoBrale\Backup\New folder (2)\SaxBee6\Saxbee6\Saxbee6\obj\Debug\netcoreapp1.1\Saxbee6.csprojResolveAssemblyReference.cache
+C:\Users\Matej\Desktop\Praksa\NovoBrale\Backup\New folder (2)\SaxBee6\Saxbee6\Saxbee6\obj\Debug\netcoreapp1.1\Saxbee6.AssemblyInfo.cs
+C:\Users\Matej\Desktop\Praksa\NovoBrale\Backup\New folder (2)\SaxBee6\Saxbee6\Saxbee6\obj\Debug\netcoreapp1.1\Saxbee6.dll
+C:\Users\Matej\Desktop\Praksa\NovoBrale\Backup\New folder (2)\SaxBee6\Saxbee6\Saxbee6\obj\Debug\netcoreapp1.1\Saxbee6.pdb
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\bin\Debug\netcoreapp1.1\Saxbee6.deps.json
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\bin\Debug\netcoreapp1.1\Saxbee6.runtimeconfig.json
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\bin\Debug\netcoreapp1.1\Saxbee6.runtimeconfig.dev.json
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\bin\Debug\netcoreapp1.1\Saxbee6.dll
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\bin\Debug\netcoreapp1.1\Saxbee6.pdb
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\obj\Debug\netcoreapp1.1\Saxbee6.csprojResolveAssemblyReference.cache
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\obj\Debug\netcoreapp1.1\Saxbee6.AssemblyInfo.cs
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\obj\Debug\netcoreapp1.1\Saxbee6.dll
+C:\Users\Matej\Desktop\Praksa\SaxBee6\Saxbee6\Saxbee6\obj\Debug\netcoreapp1.1\Saxbee6.pdb
