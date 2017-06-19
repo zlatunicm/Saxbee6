@@ -1,1 +1,0 @@
-﻿INSERT INTO Radovi (Datum_Pocetak_Rada ) VALUES (CURRENT_TIMESTAMP)
